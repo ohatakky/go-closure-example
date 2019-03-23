@@ -4,6 +4,7 @@ import "fmt"
 
 func print_x_closure() func() {
 	x := 0
+	fmt.Println(x)
 	return func() {
 		x = x + 1
 		fmt.Println(x)
